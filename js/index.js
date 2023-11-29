@@ -33,33 +33,21 @@ function renderEverything() {
 
 function renderPepperoni() {
   document.querySelectorAll('.pep').forEach((onePep) => {
-    if (state.pepperoni) {
-      onePep.style.visibility = 'visible';
-    } else {
-      onePep.style.visibility = 'hidden';
-    }
+    state.pepperoni ? onePep.style.visibility = 'visible' : onePep.style.visibility = 'hidden';
   });
 }
 
 function renderMushrooms() {
   // Iteration 1: set the visibility of `<section class="mushroom">`
   document.querySelectorAll('.mushroom').forEach((oneMushroom) => {
-    if (state.mushrooms) {
-      oneMushroom.style.visibility = 'visible';
-    } else {
-      oneMushroom.style.visibility = 'hidden';
-    }
+    state.mushrooms ? oneMushroom.style.visibility = 'visible' : oneMushroom.style.visibility = 'hidden';
   });
 }
 
 function renderGreenPeppers() {
   // Iteration 1: set the visibility of `<section class="green-pepper">`
   document.querySelectorAll('.green-pepper').forEach((oneGreenPepper) => {
-    if (state.greenPeppers) {
-      oneGreenPepper.style.visibility = 'visible';
-    } else {
-      oneGreenPepper.style.visibility = 'hidden';
-    }
+    state.greenPeppers ? oneGreenPepper.style.visibility = 'visible' : oneGreenPepper.style.visibility = 'hidden';
   });
 }
 
